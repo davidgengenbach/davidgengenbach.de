@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.logo {
+    display: block;
+    width: 130px;
+    margin: auto;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    width: 130px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+body {
+    min-width: 280px;
+    background: #CADADA;
+}
+
+header {
+    margin: 16px 0;
+}
+
+.p-tl,
+.p-tr,
+.p-bl,
+.p-br {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #DDD;
+    border: none !important;
+}
+
+.p-tl { border-right: none; border-bottom: none; top: 0; left: 0;}
+.p-tr { border-left: none; border-bottom: none; top: 0; right: 0; }
+.p-bl { border-right: none; border-top: none; bottom: 0; left: 0; }
+.p-br { border-left: none; border-top: none; bottom: 0; right: 0; }
+
+.logo > img:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.1s ease-out;
+    display: none;
+}
+
+.logo:hover > img:last-child {
+    left: 2px;
+    top: 2px;
+    display: block;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #424040;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+    font-family: Verdana;
+}
+
+.text-highlight {
+    color: #777;
+}
+
+a {
+    color: #424040;
+}
+
+a.blank {
+    text-decoration: none;
+}
+
+.content {
+    max-width: 640px;
+    margin: auto;
+    padding: 10px;
+    /* FOOTER! */
+    margin-bottom: 20px;
+}
+
+.button {
+    background: rgb(244, 244, 244);
+    padding: 4px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: rgb(250, 250, 250);
+}
+
+.hover-hightlight:hover {
+    cursor: pointer;
+    background: #EEE;
+}
+
+.rel {
+    position: relative;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+}
+
+footer nav {
+    padding: 4px;
+    transition: all 0.2s;
+}
+
+footer nav:hover {
+    opacity: 1;
+    background: #eee;
+}
+
+footer .social-nav {
+    float: left;
+}
+
+footer .footer-nav {
+    float: right;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+a i {
+    margin-right: 2px;
+}
+
+footer a {
+    display: inline-block;
+    padding: 0 8px;
+    border-right: 1px solid #DDD;
+}
+
+footer a:last-child {
+    border-right: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/**
+    http://www.gridlover.net/app/
+    16px/1.4
+**/
+body {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h1, h2 {
+  font-size: 21px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+
+.grid a {
+    opacity: 0.9;
+    transition: all .2s ease-out;
+    color: #393e3e;
+    border-bottom: 1px solid #393e3e;
+    padding-bottom: 4px;
+    padding: 4px 5px;
+}
+
+
+.grid a:hover {
+    opacity: 1;
+    /*font-size: 105%;*/
+    color: #F5F8F8;
+    text-shadow: 0px 1px 2px rgba(150, 150, 150, 1);
+    border-bottom: 1px solid #F5F8F8;
+}
+
+@media only all and (max-width: 600px) {
+    .grid .width-33 {
+        /* lies, lies */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo img:last-child {
+        display: none !important;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer .social-nav,
+    footer .footer-nav {
+        position: relative;
+        float: none;
+    }
+}
+
+
+.grid .width-33 {
+    float: left;
+}
+
+.width-33 {
+    width: 33%;
+}
