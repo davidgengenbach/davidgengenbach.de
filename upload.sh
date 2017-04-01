@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
 SERVER='davidgengenbach.de'
-REMOTE_DIR='/sites/davidgengenbach/yes'
+REMOTE_DIR='/sites/davidgengenbach/'
 LOCAL_DIR='site'
 
-ncftp $SERVER <<EOF
-    cd $REMOTE_DIR
+lftp  -e "set ftp:ssl-allow no;" davidgengenbach.de <<EOF
     lcd $LOCAL_DIR
-    mput -R *
+    cd $REMOTE_DIR
+    mirror -R
     exit
 EOF
