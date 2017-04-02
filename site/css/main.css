@@ -7,11 +7,11 @@ body {
     color: #424040;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Lato', sans-serif;
-    font-family: Verdana;
     height: 100%;
     min-width: 280px;
     background: #94d3d3;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
 }
 
 .container {
@@ -44,14 +44,15 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    transition: all 0.1s ease-out;
-    display: none;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    display: block;
 }
 
 .logo:hover > img:last-child {
     left: 2px;
-    top: 2px;
-    display: block;
+    top: 3px;
+    opacity: 0.5;
 }
 
 a {
@@ -93,15 +94,17 @@ a.blank {
 }
 
 footer {
+    background: #94d3d3;
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.7;
+    opacity: 1;
+    padding: 4px;
 }
 
-footer nav {
+footer {
     padding: 4px;
     transition: all 0.2s;
 }
@@ -145,16 +148,16 @@ footer a:last-child {
     body {
         background: #94d3d3;
     }
-
+    .links {
+        margin-bottom: 40px;
+    }
     .links a {
         margin: 12px 6px;
         display: block;
     }
-
     .logo img:last-child {
         display: none !important;
     }
-
     footer .footer-nav {
         float: none;
     }

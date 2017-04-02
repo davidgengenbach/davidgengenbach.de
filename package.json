@@ -1,15 +1,12 @@
 {
   "name": "davidgengenbach.de",
   "version": "1.0.0",
-  "description": "```shell brew install ncftp # Add bookmark ncftp",
-  "main": "index.js",
+  "description": ":)",
   "dependencies": {
+    "http-server": "^0.9.0",
     "purify-css": "^1.1.9"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidgengenbach/davidgengenbach.de.git"
@@ -20,5 +17,5 @@
   "bugs": {
     "url": "https://github.com/davidgengenbach/davidgengenbach.de/issues"
   },
-  "homepage": "https://github.com/davidgengenbach/davidgengenbach.de#readme"
+  "homepage": "https://davidgengenbach.de"
 }
