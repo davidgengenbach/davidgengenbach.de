@@ -14,11 +14,28 @@ body {
     font-weight: 300;
 }
 
+h1,
+h2 {
+    font-weight: 600;
+    margin: 0.8em 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 16px;
+}
+
 .container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.max-width {
+    max-width: 600px;
 }
 
 header {
@@ -63,7 +80,7 @@ a.blank {
     text-decoration: none;
 }
 
-.links {
+.links, .centered {
     margin: auto;
     margin-bottom: 100px;
 }
